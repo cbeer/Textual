@@ -315,7 +315,7 @@
 {
 	/* Keep this in sync with the interface builder file. */
 
-	return 38.0;
+	return 16.0;
 }
 
 - (NSInteger)serverCellTextFieldLeftMargin

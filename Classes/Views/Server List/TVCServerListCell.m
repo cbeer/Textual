@@ -420,7 +420,7 @@
 	/* Draw an image with alpha. */
 	/* We already know all these images will be 16x16. */
 	if (alpha < 1.0) {
-		newImage = [NSImage newImageWithSize:NSMakeSize(16, 16)];
+		newImage = [NSImage newImageWithSize:NSMakeSize(3, 3)];
 
 		[newImage lockFocus];
 
@@ -481,15 +481,15 @@
 		}
 		
 		if (channel.isActive) {
-			[self drawStatusBadge:iconName withAlpha:1.0];
+			[self drawStatusBadge:iconName withAlpha:0.0];
 		} else {
-			[self drawStatusBadge:iconName withAlpha:0.4];
+			[self drawStatusBadge:iconName withAlpha:0.0];
 		}
 	} else {
 		if (channel.isActive) {
-			[self drawStatusBadge:[self.serverList privateMessageStatusIconFilename:isSelected] withAlpha:0.8];
+			[self drawStatusBadge:[self.serverList privateMessageStatusIconFilename:isSelected] withAlpha:0.0];
 		} else {
-			[self drawStatusBadge:[self.serverList privateMessageStatusIconFilename:isSelected] withAlpha:0.5];
+			[self drawStatusBadge:[self.serverList privateMessageStatusIconFilename:isSelected] withAlpha:0.0];
 		}
 	}
 
