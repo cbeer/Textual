@@ -350,9 +350,9 @@
 		cellFrame.origin.y += 0.5;
 	}
 
-	cellFrame.origin.x += 29;
+	cellFrame.origin.x += 12;
 	
-	cellFrame.size.width -= 29;
+	cellFrame.size.width -= 12;
 
 	NSRange textRange = NSMakeRange(0, newStrValue.length);
 

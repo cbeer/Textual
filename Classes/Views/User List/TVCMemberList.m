@@ -244,12 +244,12 @@
 
 - (NSInteger)userMarkBadgeWidth
 {
-	return 18.0;
+	return 3.0;
 }
 
 - (NSInteger)userMarkBadgeHeight
 {
-	return 14.0;
+	return 3.0;
 }
 
 - (NSFont *)normalCellFont
