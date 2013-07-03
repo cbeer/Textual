@@ -33,7 +33,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 4CCF301115804DCE006FFE21 /* Build configuration list for PBXAggregateTarget "Build Frameworks" */;
 			buildPhases = (
-				4CCF301715804DD1006FFE21 /* ShellScript */,
+				4CCF301715804DD1006FFE21 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -3083,13 +3083,14 @@
 			shellScript = "exec \"${PROJECT_FILE_PATH}/BuildExtensions.sh\"";
 			showEnvVarsInLog = 0;
 		};
-		4CCF301715804DD1006FFE21 /* ShellScript */ = {
+		4CCF301715804DD1006FFE21 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3584,6 +3585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C86B0101748B7B60028C7AE /* Shared Debug Configuration.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = Textual;
@@ -3599,6 +3601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C86B00F1748B7B60028C7AE /* Shared Developer ID Release Configuration.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = Textual;
@@ -3613,24 +3616,28 @@
 		4C1DC5711580420500A47BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		4C1DC5721580420500A47BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -3674,6 +3681,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C77A31F1748BCCF00D9BD05 /* Shared Trial Release Configuration.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = "Textual Trial";
@@ -3688,12 +3696,14 @@
 		4C77A3261748BCDC00D9BD05 /* Release (Trial) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
 			};
 			name = "Release (Trial)";
 		};
@@ -3739,6 +3749,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C86B0111748B7B60028C7AE /* Shared App Store Release Configuration.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = Textual;
@@ -3753,12 +3764,14 @@
 		4CCF2F9115804987006FFE21 /* Release (App Store) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
 			};
 			name = "Release (App Store)";
 		};
