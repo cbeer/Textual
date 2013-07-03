@@ -184,7 +184,7 @@
 
 "InputRequiredToContinue" = "Input Required to Continue";
 
-"InputTextFieldPlaceholderValue" = "Send Message …";
+"InputTextFieldPlaceholderValue" = "";
 
 "InviteSheetMultiplePeopleSelected" = "%d users";
 "InviteSheetTargetDescription" = "Invite %@ to:";
