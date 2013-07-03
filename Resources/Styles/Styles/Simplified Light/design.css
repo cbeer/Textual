@@ -8,13 +8,14 @@
 }	
 
 body {
-	color: #000;
+	color: #666;
 	height: 100%;
  	z-index: 100;
-	font-size: 12px;
+	font-size: 13px;
+	line-height: 19px;
 	overflow: hidden;
 	overflow-y: visible;
-	background-color: #fff;
+	background-color: #f7f7f7;
 	font-family: "Lucida Grande";
 }
 
